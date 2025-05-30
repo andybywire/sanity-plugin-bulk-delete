@@ -34,11 +34,11 @@ export const BulkDeleteComponent = (config: BulkDeleteToolOptions) => {
   // Compute GROQ filter for the current perspective
   const perspectiveMatch =
     perspectiveName === 'published'
-      ? `!(_id match "drafts.*" || _id match "versions.*") &&`
+      ? `!(_id in path("drafts.**") || _id in path("versions.**")) &&`
       : perspectiveName === 'drafts'
-        ? `(_id match "drafts.*") &&`
+        ? `(_id in path("drafts.**")) &&`
         : isString(perspectiveName)
-          ? `(_id match "versions.${perspectiveName}.*") &&`
+          ? `(_id in path("versions.${perspectiveName}.**")) &&`
           : ''
 
   // Permission check
