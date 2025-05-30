@@ -12,7 +12,7 @@
   "type": "commonjs",
   "exports": {
     ".": {
-      "source": "./src/index.tsx",
+      "source": "./src/index.ts",
       "import": "./dist/index.mjs",
       "default": "./dist/index.js"
     },
