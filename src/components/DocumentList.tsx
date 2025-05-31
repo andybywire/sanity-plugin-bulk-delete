@@ -26,6 +26,15 @@ export function DocumentList({
                   : doc._id.includes('versions')
                   ? '#0074d9'
                   : '#007a1c',
+                cursor: 'pointer',
+                userSelect: 'none',
+              }}
+              onClick={() => handleSelectDoc(doc._id)}
+              tabIndex={0}
+              role="button"
+              aria-pressed={isDocSelected(doc)}
+              onKeyUp={e => {
+                if (e.key === 'Enter' || e.key === ' ') handleSelectDoc(doc._id)
               }}
             >
               {doc.title || doc.name || doc._id}
