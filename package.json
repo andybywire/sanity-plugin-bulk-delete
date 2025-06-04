@@ -1,6 +1,6 @@
 {
   "name": "sanity-plugin-bulk-delete",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Tool To bulk Delete Documents from a Data Set",
   "keywords": [
     "sanity",
