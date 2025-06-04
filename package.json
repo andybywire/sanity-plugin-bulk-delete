@@ -52,16 +52,12 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "prettier": "^3.5.3",
-    "prettier-plugin-packagejson": "^2.5.14",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "sanity": "^3.90.0",
-    "styled-components": "^6.1.18",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "react": "^18",
-    "sanity": "^3"
+    "react-dom": "^18",
+    "sanity": "^3.76.0"
   },
   "engines": {
     "node": ">=18"
