@@ -1,6 +1,6 @@
 {
   "name": "sanity-plugin-bulk-delete",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Tool To bulk Delete Documents from a Data Set",
   "keywords": [
     "sanity",
@@ -8,6 +8,13 @@
   ],
   "license": "MIT",
   "author": "Jason Brown <jason.brown@sanity.io>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonb194/sanity-plugin-bulk-delete.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jasonb194/sanity-plugin-bulk-delete/issues"
+  },
   "sideEffects": false,
   "type": "commonjs",
   "exports": {
