@@ -1,6 +1,6 @@
 # BulkDelete
 
-BulkDelete is a Sanity Studio v3 tool plugin that allows administrators (and optionally other roles) to safely bulk delete documents of a selected type from your dataset. It prevents deletion of documents that are strongly referenced elsewhere, and provides a clear UI for selecting, reviewing, and confirming deletions.
+BulkDelete is a Sanity Studio v3/4 tool plugin that allows administrators (and optionally other roles) to safely bulk delete documents of a selected type from your dataset. It prevents deletion of documents that are strongly referenced elsewhere, and provides a clear UI for selecting, reviewing, and confirming deletions.
 
 ## Features
 
