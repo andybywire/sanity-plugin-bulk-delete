@@ -37,7 +37,7 @@ export function DocumentList({
                 if (e.key === 'Enter' || e.key === ' ') handleSelectDoc(doc._id)
               }}
             >
-              {doc.title || doc.name || doc._id}
+              {doc.title || doc.name || doc.prefLabel || doc._id}
               {doc.hasWeakReferences && (
                 <Text as="span" size={1} style={{marginLeft: 8, color: '#b26b00'}}>
                   (Has weak reference)
@@ -56,7 +56,7 @@ export function DocumentList({
             {stronglyReferencedDocs.map(doc => (
               <Flex key={doc._id} align="center" gap={2} style={{opacity: 0.5}}>
                 <Checkbox checked={false} disabled />
-                <Text>{doc.title || doc.name || doc._id}</Text>
+                <Text>{doc.title || doc.name || doc.prefLabel || doc._id}</Text>
               </Flex>
             ))}
           </>
